@@ -1,0 +1,6 @@
+@Expenso.StartUp_HostAddress = http://localhost:5251
+
+GET {{Expenso.StartUp_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
