@@ -57,5 +57,7 @@ namespace Expenso.Infrastructure.Models
         [Required]
         [Comment("Account creation date")]
         public DateTime CreatedAt { get; set; }
+
+        public ICollection<Transaction> Transactions { get; set; } = new List<Transaction>();
     }
 }
