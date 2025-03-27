@@ -34,6 +34,7 @@ namespace Expenso.Infrastructure.Models
         /// Budget amount
         /// </summary>
         [Required]
+        [Precision(18, 2)]
         [Comment("Budget amount")]
         public decimal Amount { get; set; }
 
