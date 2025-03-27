@@ -74,5 +74,8 @@ namespace Expenso.Infrastructure.Models
 
         [ForeignKey(nameof(AccountId))]
         public Account Account { get; set; }
+
+        [ForeignKey(nameof(CategoryId))]
+        public Category Category { get; set; }
     }
 }
