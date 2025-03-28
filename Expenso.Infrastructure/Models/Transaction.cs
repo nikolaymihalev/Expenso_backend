@@ -35,6 +35,7 @@ namespace Expenso.Infrastructure.Models
         /// Amount of transaction
         /// </summary>
         [Required]
+        [Precision(18, 2)]
         [Comment("Transaction amount")]
         public decimal Amount { get; set; }
 
