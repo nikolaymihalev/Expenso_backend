@@ -16,5 +16,6 @@ namespace Expenso.Infrastructure.Data
         public DbSet<Budget> Budgets { get; set; }
         public DbSet<SavingGoal> SavingGoals { get; set; }
         public DbSet<Investment> Investments { get; set; }
+        public DbSet<CurrencyRate> CurrencyRates { get; set; }
     }
 }

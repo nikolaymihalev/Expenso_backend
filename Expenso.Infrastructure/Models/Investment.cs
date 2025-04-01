@@ -20,7 +20,7 @@ namespace Expenso.Infrastructure.Models
         /// Owner
         /// </summary>
         [Required]
-        [Comment("User idenftifier")]
+        [Comment("User identifier")]
         public string UserId { get; set; } = string.Empty;
 
         /// <summary>
