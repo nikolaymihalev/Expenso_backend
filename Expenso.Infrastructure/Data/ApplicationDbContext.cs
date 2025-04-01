@@ -1,4 +1,5 @@
-﻿using Expenso.Infrastructure.Models;
+﻿using Expenso.Infrastructure.Data.Configurations;
+using Expenso.Infrastructure.Models;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
@@ -17,5 +18,12 @@ namespace Expenso.Infrastructure.Data
         public DbSet<SavingGoal> SavingGoals { get; set; }
         public DbSet<Investment> Investments { get; set; }
         public DbSet<CurrencyRate> CurrencyRates { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+            builder.ApplyConfiguration(new TransactionConfiguration());
+
+            base.OnModelCreating(builder);
+        }
     }
 }

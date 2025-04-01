@@ -34,6 +34,7 @@ namespace Expenso.Infrastructure.Models
         /// Exchange rate
         /// </summary>
         [Required]
+        [Precision(18, 2)]
         [Comment("Exchange rate")]
         public decimal Rate { get; set; }
 
